@@ -19,7 +19,7 @@ You can then start the container using:
 docker run -p 8182:8182 -it --name gremlin gremlin-container
 ```
 The server can be accessed on port 8182.
-Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-REST/)
+Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-rest/)
 ```
 docker pull bricaud/gremlin-server-rest
 ```
