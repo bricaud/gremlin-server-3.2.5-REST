@@ -6,11 +6,11 @@ To build it, run the following command:
 ```
 docker build -t gremlin-container . 
 ```
-This will create a docker image with name "gremlin-container".
-The graph database is configured using the files in the "files/" folder.
+This will create a docker image with name `gremlin-container`.
+The graph database is configured using the files in the `files/` folder.
 The Gremlin server will serve resquests on port 8182 using the REST API. 
 
-On startup, the server loads the graph from the file "files/treeoflife.graphml". 
+On startup, the server loads the graph from the file `files/treeoflife.graphml`. 
 See the [TinkerGraph configuration section](http://tinkerpop.apache.org/docs/current/reference/#_configuration_2) for more details.
 
 
@@ -19,7 +19,11 @@ You can then start the container using:
 docker run -p 8182:8182 -it --name gremlin gremlin-container
 ```
 The server can be accessed on port 8182.
-Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-REST/).
+Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-REST/)
+```
+docker pull bricaud/gremlin-server-rest
+```
+.
 
 ## Data
 The data provided in the graphml file `files/treeoflife.graphml` is a tree of life.
