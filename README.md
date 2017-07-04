@@ -1,6 +1,6 @@
 # A Docker container for Gremlin 3.2.5 with REST API and a demo graph
 
-This Docker file creates a container running a Gremlin server, [Gremlin Tinkerpop](https://github.com/apache/tinkerpop) 3.2.5, with a TinkerGraph. The graph database is populated with data from a tree of life (see data section).
+This Docker file creates a container running a Gremlin server, [Gremlin Tinkerpop](https://github.com/apache/tinkerpop) 3.2.5, with a TinkerGraph. The graph database is populated with data from a tree of life (tree of 35960 nodes and 35959 edges, see data section).
 
 To build it, run the following command:
 ```
