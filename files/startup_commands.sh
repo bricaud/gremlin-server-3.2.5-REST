@@ -10,4 +10,4 @@ env
 #/usr/sbin/sshd
 
 echo "starting gremlin-server"
-./bin/gremlin-server.sh gremlin-server-rest-treeoflife.yaml
+./bin/gremlin-server.sh gremlin-server-treeoflife.yaml
