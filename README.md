@@ -3,7 +3,6 @@
 This repository provides files to creates a container running a Gremlin server, [Gremlin Tinkerpop](https://github.com/apache/tinkerpop) 3.2.5, with a TinkerGraph. The graph database is populated with data from a tree of life (tree of 35960 nodes and 35959 edges, see data section). 
 The licence is Apache 2.0 for the code files and Creative Commons BY 3 for the data.
 
-The default protocol for communicating with the server is REST (ajax post request). A version of the server using websocket can be found on the branch `websocket` of this repository.
 
 There are two releases of the this Gremlin server: a server using the Gremlin REST API on the `master` branch and a server using websocket on the `websocket` branch.
 
