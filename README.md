@@ -1,6 +1,14 @@
-# A Docker container for Gremlin 3.2.5 with REST API and a demo graph
+# A Docker container for Gremlin 3.2.5 with a demo graph
 
-This Docker file creates a container running a Gremlin server, [Gremlin Tinkerpop](https://github.com/apache/tinkerpop) 3.2.5, with a TinkerGraph. The graph database is populated with data from a tree of life (tree of 35960 nodes and 35959 edges, see data section).
+This repository provides files to creates a container running a Gremlin server, [Gremlin Tinkerpop](https://github.com/apache/tinkerpop) 3.2.5, with a TinkerGraph. The graph database is populated with data from a tree of life (tree of 35960 nodes and 35959 edges, see data section). 
+The licence is Apache 2.0 for the code files and Creative Commons BY 3 for the data.
+
+The default protocol for communicating with the server is REST (ajax post request). A version of the server using websocket can be found on the branch `websocket` of this repository.
+
+There are two releases of the this Gremlin server: a server using the Gremlin REST API on the `master` branch and a server using websocket on the `websocket` branch.
+
+
+## How to run it
 
 To build it, run the following command:
 ```
@@ -8,17 +16,18 @@ docker build -t gremlin-container .
 ```
 This will create a docker image with name `gremlin-container`.
 The graph database is configured using the files in the `files/` folder.
-The Gremlin server will serve resquests on port 8182 using the REST API. 
-
-On startup, the server loads the graph from the file `files/treeoflife.graphml`. 
-See the [TinkerGraph configuration section](http://tinkerpop.apache.org/docs/current/reference/#_configuration_2) for more details.
 
 
 You can then start the container using:
 ```
 docker run -p 8182:8182 -it --name gremlin gremlin-container
 ```
-The server can be accessed on port 8182.
+
+The Gremlin server will serve resquests on port 8182. 
+
+On startup, the server loads the graph from the file `files/treeoflife.graphml`. 
+See the [TinkerGraph configuration section](http://tinkerpop.apache.org/docs/current/reference/#_configuration_2) for more details.
+
 Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-rest/)
 ```
 docker pull bricaud/gremlin-server-rest
