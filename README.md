@@ -27,7 +27,7 @@ The Gremlin server will serve resquests on port 8182.
 On startup, the server loads the graph from the file `files/treeoflife.graphml`. 
 See the [TinkerGraph configuration section](http://tinkerpop.apache.org/docs/current/reference/#_configuration_2) for more details.
 
-Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-rest/)
+Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-with-demo-graph/)
 ```
 docker pull bricaud/gremlin-server-rest
 ```
