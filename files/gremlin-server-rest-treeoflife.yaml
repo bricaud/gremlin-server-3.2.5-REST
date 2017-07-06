@@ -41,3 +41,5 @@ maxChunkSize: 8192
 maxContentLength: 65536
 maxAccumulationBufferComponents: 1024
 resultIterationBatchSize: 64
+ssl: {
+  enabled: true}

@@ -37,4 +37,4 @@ globals << [hook : [
 ] as LifeCycleHook]
 
 // define the default TraversalSource to bind queries to - this one will be named "g".
-globals << [g : graph.traversal()]
+globals << [g : graph.traversal(GraphTraversalSource.build().with(ReadOnlyStrategy.instance()))]
