@@ -29,7 +29,7 @@ See the [TinkerGraph configuration section](http://tinkerpop.apache.org/docs/cur
 
 Alternatively, you can pull the image from DockerHub [here](https://hub.docker.com/r/bricaud/gremlin-server-with-demo-graph/)
 ```
-docker pull bricaud/gremlin-server-rest
+docker pull bricaud/gremlin-server-with-demo-graph
 ```
 .
 
